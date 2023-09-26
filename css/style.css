@@ -56,6 +56,11 @@ ol {
   overflow: hidden;
 }
 /* ==============HEADER========= */
+.page-header {
+  box-shadow: 0px 1px 6px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 2px 1px 0px rgba(46, 47, 66, 0.08);
+}
 .container.header {
   display: flex;
   justify-content: space-between;
@@ -84,11 +89,16 @@ ol {
 .menu.list {
   gap: 40px;
 }
+
+.menu-item:first-child {
+  color: #404bbf;
+}
+
 .menu-item {
   padding: 24px 0;
+  color: var(--text-color);
 }
 .menu-links {
-  color: var(--text-color);
   font-family: Roboto;
   font-size: 16px;
   font-style: normal;
@@ -96,7 +106,24 @@ ol {
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
   padding: 24px 0;
+  color: inherit;
 }
+
+.first-link {
+  color: #404bbf;
+  position: relative;
+}
+.first-link::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  border-radius: 2px;
+  background: var(--OCEAN, #404bbf);
+}
+
 .link:hover,
 .link:focus {
   color: #404bbf;
