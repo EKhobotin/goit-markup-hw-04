@@ -491,3 +491,8 @@ ol {
 .footer-social-icon {
   fill: var(--logo-color-footer);
 }
+
+.menu-item-portfolio {
+  padding: 24px 0;
+  color: var(--text-color);
+}
