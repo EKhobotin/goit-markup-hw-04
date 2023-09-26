@@ -330,8 +330,10 @@ ol {
   background-color: #404bbf;
 }
 .social-list-icon {
-  fill: var(--logo-color-footer);
+  fill: var(--background-color);
+  stroke: var(--background-color);
 }
+
 /* ===================PORTFOLIO================= */
 .portfolio {
   padding: 96px 0 120px 0;
